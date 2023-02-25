@@ -3,7 +3,7 @@ variable "sample" {
 }
 
 output "sample" {
-    value = "variable sample - ${var.sample}, variable sample1 - ${var.sample1}"
+    value = "variable sample - ${var.sample}, variable sample1 - ${var.sample1}, variable sample2 - ${var.sample2["number"]}"
 }
 
 variable "sample1"{
@@ -11,9 +11,9 @@ variable "sample1"{
 }
 
 variable "sample2" {
-    default = [
-        "hello",
-        1000,
-        true,
-    ]  
+    default = {
+        string = "hello",
+        number = 1000,
+        boolean = true
+    }  
 }
