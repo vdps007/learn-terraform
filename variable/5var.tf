@@ -11,7 +11,7 @@ variable "sample1"{
 }
 
 variable "sample2" {
-    dedefault = [
+    default = [
         "hello",
         1000,
         true,
