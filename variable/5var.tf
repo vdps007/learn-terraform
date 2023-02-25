@@ -3,7 +3,7 @@ variable "sample" {
 }
 
 output "sample" {
-    value = "variable sample - ${var.sample}, variable sample1 - ${var.sample1}, variable sample2 - ${var.sample2[number]}"
+    value = "variable sample - ${var.sample}, variable sample1 - ${var.sample1}, variable sample2 - ${var.sample2["number"]}"
 }
 
 variable "sample1"{
