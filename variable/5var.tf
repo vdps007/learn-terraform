@@ -17,6 +17,7 @@ variable "sample3" {
         true,
         "world"
     }  
+}
 
 variable "sample2" {
     default = {
