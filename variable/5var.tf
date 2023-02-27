@@ -11,13 +11,12 @@ variable "sample1"{
 }
 
 variable "sample3" {
-    default = {[
+    default = [
         "hello",
         1000,
         true,
         "world"
-    ]
-    }  
+    ]  
 }
 
 variable "sample2" {
