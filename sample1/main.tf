@@ -1,6 +1,6 @@
 module "ec2" {
   for_each      = var.instances
-  source        = "./ec2"
+  source        = "./test"
   component     = each.value["name"]
   instance_type = each.value["type"]
   //password      = try(each.value["password"], null)
