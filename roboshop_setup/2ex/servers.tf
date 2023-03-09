@@ -15,11 +15,3 @@ resource "aws_instance" "frontend" {
 variable "instaces" {
   default = ["cart", "catalogue", "user", "payments", "shipping"]
 }
-
-resource "aws_route53_record" "frontend" {
-    zone_id = "Z0951825YO9TU21VYS1Z"  
-    name = "frontend-dev.itsmevdps.online"
-    type = "A"
-    ttl = 30
-    records = [aws_instance.frontend.private_ip]
-}
